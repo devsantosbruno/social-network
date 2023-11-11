@@ -5,12 +5,19 @@ export const METRICS = {
     PILL: 99,
   },
 
-  FONT_SIZE: {
-    XS: 12,
-    SM: 14,
-    BASE: 16,
-    LG: 24,
-    XL: 32,
+  FONT: {
+    SIZE: {
+      XS: 12,
+      SM: 14,
+      BASE: 16,
+      LG: 24,
+      XL: 32,
+    },
+    WEIGHT: {
+      THIN: 'Roboto_100Thin',
+      REGULAR: 'Roboto_400Regular',
+      BOLD: 'Roboto_700Bold',
+    },
   },
 
   ICON: {
