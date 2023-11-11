@@ -5,8 +5,8 @@ import {
   Roboto_700Bold,
   useFonts,
 } from '@expo-google-fonts/roboto';
-import Home from '@screens/Home';
 import { StatusBar } from 'expo-status-bar';
+import { Routes } from 'src/routes';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -18,7 +18,7 @@ export default function App() {
   return (
     <>
       <StatusBar style='light' backgroundColor='transparent' translucent />
-      {fontsLoaded ? <Home /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </>
   );
 }
