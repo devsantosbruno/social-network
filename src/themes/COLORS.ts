@@ -1,8 +1,11 @@
 export const COLORS = {
   NEUTRAL: {
-    WHITE: '#FFFFFF',
+    WHITE: '#DEDEDE',
     BLACK: '#000000',
   },
+
+  SECONDARY: '#ff3535',
+
   BACKGROUND: {
     DARK: '#242424',
   },
