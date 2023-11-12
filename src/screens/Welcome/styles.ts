@@ -13,9 +13,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
   },
-  title: {
-    color: COLORS.NEUTRAL.WHITE,
-  },
+
   button: {
     borderWidth: METRICS.BORDER.DEFAULT,
     borderColor: COLORS.NEUTRAL.WHITE,
@@ -23,9 +21,8 @@ export const styles = StyleSheet.create({
     paddingHorizontal: METRICS.SPACING.XL,
     borderRadius: METRICS.RADIUS.PILL,
   },
-  buttonText: {
-    fontSize: METRICS.FONT.SIZE.LG,
-    fontFamily: METRICS.FONT.WEIGHT.THIN,
+
+  textWhite: {
     color: COLORS.NEUTRAL.WHITE,
   },
 });

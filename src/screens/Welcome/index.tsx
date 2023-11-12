@@ -27,12 +27,14 @@ export default function Welcome() {
       >
         <View style={styles.container}>
           <View style={styles.content}>
-            <Typography variant='heading' style={styles.title}>
+            <Typography variant='heading' style={styles.textWhite}>
               Welcome!
             </Typography>
 
             <TouchableOpacity style={styles.button} onPress={handleStart}>
-              <Typography style={styles.buttonText}>START</Typography>
+              <Typography variant='heading02Thin' style={styles.textWhite}>
+                START
+              </Typography>
             </TouchableOpacity>
           </View>
         </View>
