@@ -27,4 +27,17 @@ export const TYPOGRAPHY_VARIANT_STYLES = {
     fontFamily: METRICS.FONT.WEIGHT.REGULAR,
     textDecorationLine: 'underline',
   },
+  bodyBold: {
+    fontSize: METRICS.FONT.SIZE.BASE,
+    fontFamily: METRICS.FONT.WEIGHT.BOLD,
+  },
+
+  captionThin: {
+    fontSize: METRICS.FONT.SIZE.SM,
+    fontFamily: METRICS.FONT.WEIGHT.THIN,
+  },
+  captionRegular: {
+    fontSize: METRICS.FONT.SIZE.SM,
+    fontFamily: METRICS.FONT.WEIGHT.REGULAR,
+  },
 } as const;
