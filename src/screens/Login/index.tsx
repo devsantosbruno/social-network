@@ -6,9 +6,9 @@ import {
   View,
 } from 'react-native';
 
-import { Typography } from '@components/Typography';
+import { Typography } from '@components';
 
-import backgroundImg from '@assets/background-01.jpg';
+import backgroundImg from '@assets/background-01.png';
 import { styles } from './styles';
 
 export default function Login() {
