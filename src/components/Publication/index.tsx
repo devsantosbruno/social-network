@@ -1,34 +1,22 @@
 import { View } from 'react-native';
 
 import { Divider, Image, Interaction, Typography } from '@components';
-import { User } from '@interfaces';
+import { PublicationProps } from '@interfaces';
 import { COLORS, METRICS } from '@themes';
 import { HeartIcon, MessageSquareIcon, Repeat2Icon } from 'lucide-react-native';
 
 import { styles } from './styles';
 
-type PostProps = {
-  user: User;
-  title: string;
-  description: string;
-  date: string;
-  engagements: {
-    likes: number;
-    comments: number;
-    shares: number;
-  };
-};
-
 const ICON_SIZE = METRICS.ICON.SMALL;
 const ICON_COLOR = COLORS.SECONDARY;
 
-export function Post({
+export function Publication({
   user,
   title,
   description,
   date,
   engagements,
-}: PostProps) {
+}: PublicationProps) {
   return (
     <View style={styles.container}>
       <View style={styles.head}>
