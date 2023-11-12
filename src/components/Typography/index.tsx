@@ -8,7 +8,7 @@ export interface TypographyProps extends TextProps {
 export function Typography({
   children,
   style,
-  variant = 'paragraph',
+  variant = 'bodyRegular',
 }: TypographyProps) {
   return (
     <Text style={[TYPOGRAPHY_VARIANT_STYLES[variant], style]}>{children}</Text>
