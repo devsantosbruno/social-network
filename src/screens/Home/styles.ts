@@ -42,6 +42,7 @@ export const styles = StyleSheet.create({
   posts: {
     gap: METRICS.SPACING.XL,
     marginTop: METRICS.SPACING.DEFAULT,
+    paddingBottom: METRICS.SPACING.XXL,
   },
 
   textWhite: {

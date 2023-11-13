@@ -1,20 +1,22 @@
-import { FlatList, ScrollView, TouchableOpacity, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import {
+  FlatList,
+  SafeAreaView,
+  ScrollView,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 
-import userImage from '@assets/background-02.png';
 import { Image, InputGroup, Publication, Typography } from '@components';
-import { friends, user } from 'src/utils/mockData';
 
 import { COLORS, METRICS } from '@themes';
 import { PlusIcon, SearchIcon } from 'lucide-react-native';
+import { friends, user } from 'src/utils/mockData';
 import { styles } from './styles';
 
 export default function Home() {
-  const { name, image } = user;
+  const handleCreateNewStory = () => {};
 
-  const handleCreateNewStory = () => {
-    console.log('CREATE NEW STORY');
-  };
+  const { name, image } = user;
 
   return (
     <SafeAreaView style={styles.wrapper}>
@@ -59,7 +61,7 @@ export default function Home() {
             }
             renderItem={() => (
               <View style={styles.story}>
-                <Image size={80} source={userImage} borderSize={1} circle />
+                <Image size={80} source={user.image} borderSize={1} circle />
               </View>
             )}
           />
