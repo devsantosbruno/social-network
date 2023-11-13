@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/native';
 import { METRICS } from '@themes';
 import { Image as ImageRN, TouchableOpacity } from 'react-native';
 import { styles } from './styles';
@@ -18,8 +19,17 @@ export function Image({ source, size, borderSize, circle }: ImageProps) {
     borderRadius: radiusStyle,
   };
 
+  const navigation = useNavigation();
+
+  const handleOnPress = () => {
+    navigation.navigate('profile');
+  };
+
   return (
-    <TouchableOpacity style={[styles.container, customStyles]}>
+    <TouchableOpacity
+      style={[styles.container, customStyles]}
+      onPress={handleOnPress}
+    >
       <ImageRN
         source={source}
         width={size}
