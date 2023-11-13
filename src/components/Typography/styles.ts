@@ -13,6 +13,10 @@ export const TYPOGRAPHY_VARIANT_STYLES = {
     fontSize: METRICS.FONT.SIZE.LG,
     fontFamily: METRICS.FONT.WEIGHT.REGULAR,
   },
+  heading02Bold: {
+    fontSize: METRICS.FONT.SIZE.LG,
+    fontFamily: METRICS.FONT.WEIGHT.BOLD,
+  },
 
   bodyThin: {
     fontSize: METRICS.FONT.SIZE.BASE,
