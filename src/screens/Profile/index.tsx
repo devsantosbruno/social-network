@@ -2,19 +2,40 @@ import { SafeAreaView, ScrollView, TouchableOpacity, View } from 'react-native';
 
 import { Image, Publication, Typography } from '@components';
 
+import { useNavigation } from '@react-navigation/native';
+import { COLORS } from '@themes';
+import { ArrowLeftIcon } from 'lucide-react-native';
 import { user } from 'src/utils/mockData';
 import { styles } from './styles';
 
 export default function Profile() {
+  const navigation = useNavigation();
+
   const handlePortfolioRedirect = () => {};
+
+  const handleGoBack = () => {
+    navigation.goBack();
+  };
 
   return (
     <SafeAreaView style={styles.wrapper}>
       <ScrollView>
         <View style={styles.head}>
-          <Typography variant='heading02Thin' style={styles.user}>
-            {user.user}
-          </Typography>
+          <View style={styles.goBackAndUser}>
+            <TouchableOpacity style={{ width: 24 }} onPress={handleGoBack}>
+              <ArrowLeftIcon
+                color={COLORS.NEUTRAL.WHITE}
+                size={24}
+                strokeWidth={1}
+              />
+            </TouchableOpacity>
+
+            <Typography variant='heading02Thin' style={styles.user}>
+              {user.user}
+            </Typography>
+
+            <View style={{ width: 24 }} />
+          </View>
 
           <View style={styles.imageAndStatistics}>
             <Image size={120} source={user.image} borderSize={5} />

@@ -11,9 +11,14 @@ export const styles = StyleSheet.create({
     paddingVertical: METRICS.SPACING.XL,
     backgroundColor: '#303030',
   },
+  goBackAndUser: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: METRICS.SPACING.XL,
+  },
   user: {
     textAlign: 'center',
-    marginBottom: METRICS.SPACING.LG,
     color: COLORS.NEUTRAL.WHITE,
   },
   imageAndStatistics: {
