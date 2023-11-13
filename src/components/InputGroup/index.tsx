@@ -1,4 +1,5 @@
 import { COLORS, METRICS } from '@themes';
+import { useState } from 'react';
 import { TextInput, TouchableOpacity, View } from 'react-native';
 import { styles } from './styles';
 
@@ -8,12 +9,17 @@ type InputGroupProps = {
 };
 
 export function InputGroup({ placeholder, icon }: InputGroupProps) {
+  const [inputValue, setInputValue] = useState<string>();
+
   const handleSubmit = () => {
-    console.log('SUBMIT SEARCH');
+    if (inputValue?.length) {
+      console.log('SUBMIT SEARCH');
+    }
   };
 
   const styleWithIcon = {
     paddingLeft: icon ? METRICS.SPACING.XXL : METRICS.SPACING.XS,
+    zIndex: -2,
   };
 
   return (
@@ -28,6 +34,8 @@ export function InputGroup({ placeholder, icon }: InputGroupProps) {
 
       <TextInput
         style={[styles.input, styleWithIcon]}
+        onChangeText={setInputValue}
+        value={inputValue}
         placeholderTextColor={COLORS.NEUTRAL.BLACK30}
         placeholder={placeholder}
       />
